@@ -14,7 +14,7 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoteDictate_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <table alignment="left" id="bg9-Ga-IVT">
+                        <table alignment="left" pagingScroll="YES" id="bg9-Ga-IVT">
                             <items>
                                 <tableRow identifier="Row" id="Q0E-Og-Gpv" customClass="NoteSelectRow" customModule="NoteDictate">
                                     <group key="rootItem" width="1" alignment="left" id="wRJ-BD-ocG">
@@ -24,6 +24,7 @@
                                     </group>
                                     <connections>
                                         <outlet property="textLabel" destination="ldK-su-TDD" id="rZK-Ak-L9S"/>
+                                        <segue destination="ub1-3g-wPm" kind="push" id="bPU-vV-YE6"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -40,6 +41,20 @@
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--Detail Interface Controller-->
+        <scene sceneID="GsC-YS-7xa">
+            <objects>
+                <controller id="ub1-3g-wPm" customClass="DetailInterfaceController" customModule="NoteDictate_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Label" numberOfLines="0" id="biM-a3-tTr"/>
+                    </items>
+                    <connections>
+                        <outlet property="textLabel" destination="biM-a3-tTr" id="KkW-kJ-XvD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="275" y="34"/>
         </scene>
     </scenes>
 </document>

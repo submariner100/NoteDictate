@@ -72,5 +72,9 @@ class InterfaceController: WKInterfaceController {
           
        }
      }
+     
+     override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
+          return ["index" : String(rowIndex + 1), "note" : notes[rowIndex]]
+     }
 
 }

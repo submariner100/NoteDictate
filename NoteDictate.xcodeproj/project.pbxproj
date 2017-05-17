@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		273A77031ECC38B0000F625C /* DetaiIlnterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273A77021ECC38B0000F625C /* DetaiIlnterfaceController.swift */; };
 		275B2D761ECB993C0067195D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B2D751ECB993C0067195D /* AppDelegate.swift */; };
 		275B2D781ECB993C0067195D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275B2D771ECB993C0067195D /* ViewController.swift */; };
 		275B2D7B1ECB993C0067195D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275B2D791ECB993C0067195D /* Main.storyboard */; };
@@ -65,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		273A77021ECC38B0000F625C /* DetaiIlnterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaiIlnterfaceController.swift; sourceTree = "<group>"; };
 		275B2D721ECB993C0067195D /* NoteDictate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteDictate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		275B2D751ECB993C0067195D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		275B2D771ECB993C0067195D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		275B2D971ECB993C0067195D /* NoteDictate WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				273A77021ECC38B0000F625C /* DetaiIlnterfaceController.swift */,
 				275B2DAE1ECBA54D0067195D /* NoteSelectRow.swift */,
 				275B2D981ECB993C0067195D /* InterfaceController.swift */,
 				275B2D9A1ECB993C0067195D /* ExtensionDelegate.swift */,
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				273A77031ECC38B0000F625C /* DetaiIlnterfaceController.swift in Sources */,
 				275B2DAF1ECBA54D0067195D /* NoteSelectRow.swift in Sources */,
 				275B2D9B1ECB993C0067195D /* ExtensionDelegate.swift in Sources */,
 				275B2D991ECB993C0067195D /* InterfaceController.swift in Sources */,
