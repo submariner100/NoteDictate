@@ -524,6 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4WU9L65MXB;
 				INFOPLIST_FILE = NoteDictate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Chappy-App.NoteDictate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4WU9L65MXB;
 				INFOPLIST_FILE = NoteDictate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Chappy-App.NoteDictate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -563,6 +565,7 @@
 				275B2DA31ECB993C0067195D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B2DA51ECB993C0067195D /* Build configuration list for PBXNativeTarget "NoteDictate WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -571,6 +574,7 @@
 				275B2DA71ECB993C0067195D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		275B2DA91ECB993C0067195D /* Build configuration list for PBXNativeTarget "NoteDictate" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +583,7 @@
 				275B2DAB1ECB993C0067195D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

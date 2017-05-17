@@ -54,7 +54,23 @@ class InterfaceController: WKInterfaceController {
     
      @IBAction func addNewNote() {
      
-     
+          // 1. request user input
+          presentTextInputController(withSuggestions: nil, allowedInputMode: .plain) { [unowned self]
+          result in
+          
+          // 2. convert the returned item to a string if possible, otherwise bail out
+          guard let result = result?.first as? String else { return }
+          
+          // 3. insert a new row
+          self.table.insertRows(at: IndexSet(integer: self.notes.count), withRowType: "Row")
+          
+          // 4. give our new row the correct text
+          self.set(row: self.notes.count, to: result)
+          
+          // 5. append the new note to our array
+          self.notes.append(result)
+          
+       }
      }
 
 }
