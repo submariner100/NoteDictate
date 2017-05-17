@@ -14,15 +14,16 @@ class InterfaceController: WKInterfaceController {
 
     
      @IBOutlet var table: WKInterfaceTable!
-     
      var notes = [String]()
+     var savePath = InterfaceController.getDocumentsDirectory().appendingPathComponent("notes").path
      
-    
-    
+     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+     
+        notes = NSKeyedUnarchiver.unarchiveObject(withFile: savePath) as? [String] ?? [String]()
      
         table.setNumberOfRows(notes.count, withRowType: "Row")
      
@@ -70,11 +71,23 @@ class InterfaceController: WKInterfaceController {
           // 5. append the new note to our array
           self.notes.append(result)
           
+          NSKeyedArchiver.archiveRootObject(self.notes, toFile: self.savePath)
+          
+          
        }
      }
      
      override func contextForSegue(withIdentifier segueIdentifier: String, in table: WKInterfaceTable, rowIndex: Int) -> Any? {
           return ["index" : String(rowIndex + 1), "note" : notes[rowIndex]]
+     }
+     
+     static func getDocumentsDirectory() -> URL {
+          
+          let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+          
+          return paths[0]
+          
+          
      }
 
 }
